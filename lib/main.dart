@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
   void _nextQuestion(int score) {
-    _totalScore += score;
+    _totalScore = _totalScore + score;
     setState(() {
       _index = _index + 1;
     });
